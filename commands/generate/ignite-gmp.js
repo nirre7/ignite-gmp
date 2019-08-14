@@ -1,14 +1,14 @@
 /**
  * This is an example Ignite plugin generator. You can run it when it's installed to
  * your project by doing `ignite generate Gmp foo`.
- * 
+ *
  * You can rename this command to anything you'd like, or add others.
- * 
+ *
  * For more information on plugins, check out https://github.com/infinitered/gluegun/blob/master/docs/plugins.md.
  */
 
 module.exports = {
-  description: "Example Gmp generator",
+  description: "Example generator",
   run: async function (toolbox) {
     // Learn more about toolbox: https://infinitered.github.io/gluegun/#/toolbox-api.md
     const { parameters, strings, print, ignite } = toolbox
