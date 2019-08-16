@@ -1,0 +1,29 @@
+import * as React from 'react'
+import { View, ViewStyle } from 'react-native'
+import { observer } from 'mobx-react'
+import { Text } from '../text'
+
+export interface <%= props.pascalName %>Props {
+}
+
+export interface <%= props.pascalName %>State {
+}
+
+const WRAPPER: ViewStyle = {
+
+}
+
+// @inject('aMobxStateTreeStore')
+@observer
+export class <%= props.pascalName %> extends React.Component<<%= props.pascalName %>Props, <%= props.pascalName %>State> {
+
+    render(): React.ReactNode {
+
+        return (
+        <View style={WRAPPER}>
+            <Text text={' <%= props.pascalName %> works!'}/>
+        </View>
+        )
+    }
+
+}

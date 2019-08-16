@@ -1,0 +1,22 @@
+import * as React from 'react'
+import { View } from 'react-native'
+import { Text } from '../text'
+
+export interface <%= props.pascalName %>Props {
+something: any;
+}
+
+export function <%= props.pascalName %>(props: <%= props.pascalName %>Props) {
+
+    const {something, ...rest} = props
+
+    // TODO add hooks :D
+    // TODO add hooks :D
+    // TODO add hooks :D
+
+    return (
+        <View {...rest}>
+            <Text text={'<%= props.pascalName %> works!'}/>
+        </View>
+    )
+}
